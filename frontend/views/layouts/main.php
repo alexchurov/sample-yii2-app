@@ -34,7 +34,7 @@ AppAsset::register($this);
             ]);
             $menuItems = [
                 ['label' => 'Главная', 'url' => ['/site/index']],
-                ['label' => 'Перейти в админку', 'url' => ['backend']]
+                ['label' => 'Перейти в админку', 'url' => ['/site/backend']]
             ];
             if (Yii::$app->user->isGuest) {
                 $menuItems[] = ['label' => 'Вход для пользователей', 'url' => ['/site/login']];

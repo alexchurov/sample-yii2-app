@@ -4,11 +4,9 @@ $this->title = 'Демонстрационное приложение';
 ?>
 <div class="site-index">
 
-    <div class="jumbotron">
-        
-    </div>
+	<h2>Добро пожаловать</h2>
+	<br/>
+	<br/>
+	<a href="/?r=product/pricelist">Перейти к списку товаров</a>
 
-    <div class="body-content">
-
-    </div>
 </div>

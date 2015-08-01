@@ -67,7 +67,8 @@ class SiteController extends Controller
 
     public function actionIndex()
     {
-        return $this->render('index');
+        //return $this->render('index');
+        return $this->redirect('/?r=product/pricelist',302);
     }
 
     public function actionLogin()
@@ -91,6 +92,11 @@ class SiteController extends Controller
         Yii::$app->user->logout();
 
         return $this->goHome();
+    }
+
+    public function actionBackend()
+    {
+        return $this->redirect('http://price-admin.wdserver.ru',302);
     }
 
     public function actionContact()
